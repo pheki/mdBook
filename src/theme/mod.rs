@@ -37,89 +37,85 @@ pub static FONT_AWESOME_OTF: &[u8] = include_bytes!("FontAwesome/fonts/FontAweso
 // An array of (file_name, file_contents) pairs
 pub static FONT_OPEN_SANS: [(&str, &[u8]); 20] = [
     (
-        "fonts/open-sans-v17-all-charsets-300.woff", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-300.woff")
+        "fonts/open-sans-v17-all-charsets-300.woff",
+        include_bytes!("fonts/open-sans-v17-all-charsets-300.woff"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-300.woff2", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-300.woff2")
+        "fonts/open-sans-v17-all-charsets-300.woff2",
+        include_bytes!("fonts/open-sans-v17-all-charsets-300.woff2"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-300italic.woff", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-300italic.woff")
+        "fonts/open-sans-v17-all-charsets-300italic.woff",
+        include_bytes!("fonts/open-sans-v17-all-charsets-300italic.woff"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-300italic.woff2", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-300italic.woff2")
+        "fonts/open-sans-v17-all-charsets-300italic.woff2",
+        include_bytes!("fonts/open-sans-v17-all-charsets-300italic.woff2"),
     ),
-
     // Regular is 400
     (
-        "fonts/open-sans-v17-all-charsets-regular.woff", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-regular.woff")
+        "fonts/open-sans-v17-all-charsets-regular.woff",
+        include_bytes!("fonts/open-sans-v17-all-charsets-regular.woff"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-regular.woff2", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-regular.woff2")
+        "fonts/open-sans-v17-all-charsets-regular.woff2",
+        include_bytes!("fonts/open-sans-v17-all-charsets-regular.woff2"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-italic.woff", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-italic.woff")
+        "fonts/open-sans-v17-all-charsets-italic.woff",
+        include_bytes!("fonts/open-sans-v17-all-charsets-italic.woff"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-italic.woff2", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-italic.woff2")
-    ),
-
-    (
-        "fonts/open-sans-v17-all-charsets-600.woff", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-600.woff")
+        "fonts/open-sans-v17-all-charsets-italic.woff2",
+        include_bytes!("fonts/open-sans-v17-all-charsets-italic.woff2"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-600.woff2", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-600.woff2")
+        "fonts/open-sans-v17-all-charsets-600.woff",
+        include_bytes!("fonts/open-sans-v17-all-charsets-600.woff"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-600italic.woff", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-600italic.woff")
+        "fonts/open-sans-v17-all-charsets-600.woff2",
+        include_bytes!("fonts/open-sans-v17-all-charsets-600.woff2"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-600italic.woff2", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-600italic.woff2")
-    ),
-
-    (
-        "fonts/open-sans-v17-all-charsets-700.woff", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-700.woff")
+        "fonts/open-sans-v17-all-charsets-600italic.woff",
+        include_bytes!("fonts/open-sans-v17-all-charsets-600italic.woff"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-700.woff2", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-700.woff2")
+        "fonts/open-sans-v17-all-charsets-600italic.woff2",
+        include_bytes!("fonts/open-sans-v17-all-charsets-600italic.woff2"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-700italic.woff", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-700italic.woff")
+        "fonts/open-sans-v17-all-charsets-700.woff",
+        include_bytes!("fonts/open-sans-v17-all-charsets-700.woff"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-700italic.woff2", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-700italic.woff2")
-    ),
-
-    (
-        "fonts/open-sans-v17-all-charsets-800.woff", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-800.woff")
+        "fonts/open-sans-v17-all-charsets-700.woff2",
+        include_bytes!("fonts/open-sans-v17-all-charsets-700.woff2"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-800.woff2", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-800.woff2")
+        "fonts/open-sans-v17-all-charsets-700italic.woff",
+        include_bytes!("fonts/open-sans-v17-all-charsets-700italic.woff"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-800italic.woff", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-800italic.woff")
+        "fonts/open-sans-v17-all-charsets-700italic.woff2",
+        include_bytes!("fonts/open-sans-v17-all-charsets-700italic.woff2"),
     ),
     (
-        "fonts/open-sans-v17-all-charsets-800italic.woff2", 
-        include_bytes!("fonts/open-sans-v17-all-charsets-800italic.woff2")
+        "fonts/open-sans-v17-all-charsets-800.woff",
+        include_bytes!("fonts/open-sans-v17-all-charsets-800.woff"),
+    ),
+    (
+        "fonts/open-sans-v17-all-charsets-800.woff2",
+        include_bytes!("fonts/open-sans-v17-all-charsets-800.woff2"),
+    ),
+    (
+        "fonts/open-sans-v17-all-charsets-800italic.woff",
+        include_bytes!("fonts/open-sans-v17-all-charsets-800italic.woff"),
+    ),
+    (
+        "fonts/open-sans-v17-all-charsets-800italic.woff2",
+        include_bytes!("fonts/open-sans-v17-all-charsets-800italic.woff2"),
     ),
 ];
 

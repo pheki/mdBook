@@ -176,18 +176,10 @@ impl HtmlHandlebars {
             theme::FONT_AWESOME_TTF,
         )?;
         for (file_name, contents) in theme::FONT_OPEN_SANS.iter() {
-            write_file(
-                destination,
-                file_name,
-                contents,
-            )?;
+            write_file(destination, file_name, contents)?;
         }
         for (file_name, contents) in theme::FONT_SOURCE_CODE_PRO.iter() {
-            write_file(
-                destination,
-                file_name,
-                contents,
-            )?;
+            write_file(destination, file_name, contents)?;
         }
 
         let playpen_config = &html_config.playpen;
