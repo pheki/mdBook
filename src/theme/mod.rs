@@ -37,101 +37,101 @@ pub static FONT_AWESOME_OTF: &[u8] = include_bytes!("FontAwesome/fonts/FontAweso
 // An array of (file_name, file_contents) pairs
 pub static FONT_OPEN_SANS: [(&str, &[u8]); 20] = [
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-300.woff", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-300.woff")
+        "fonts/open-sans-v17-all-charsets-300.woff", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-300.woff")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-300.woff2", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-300.woff2")
+        "fonts/open-sans-v17-all-charsets-300.woff2", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-300.woff2")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-300italic.woff", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-300italic.woff")
+        "fonts/open-sans-v17-all-charsets-300italic.woff", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-300italic.woff")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-300italic.woff2", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-300italic.woff2")
+        "fonts/open-sans-v17-all-charsets-300italic.woff2", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-300italic.woff2")
     ),
 
     // Regular is 400
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff")
+        "fonts/open-sans-v17-all-charsets-regular.woff", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-regular.woff")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2")
+        "fonts/open-sans-v17-all-charsets-regular.woff2", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-regular.woff2")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff")
+        "fonts/open-sans-v17-all-charsets-italic.woff", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-italic.woff")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff2", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-italic.woff2")
-    ),
-
-    (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-600.woff", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-600.woff")
-    ),
-    (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-600.woff2", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-600.woff2")
-    ),
-    (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-600italic.woff", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-600italic.woff")
-    ),
-    (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-600italic.woff2", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-600italic.woff2")
+        "fonts/open-sans-v17-all-charsets-italic.woff2", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-italic.woff2")
     ),
 
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff")
+        "fonts/open-sans-v17-all-charsets-600.woff", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-600.woff")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2")
+        "fonts/open-sans-v17-all-charsets-600.woff2", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-600.woff2")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff")
+        "fonts/open-sans-v17-all-charsets-600italic.woff", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-600italic.woff")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff2", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-700italic.woff2")
+        "fonts/open-sans-v17-all-charsets-600italic.woff2", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-600italic.woff2")
     ),
 
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-800.woff", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-800.woff")
+        "fonts/open-sans-v17-all-charsets-700.woff", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-700.woff")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2")
+        "fonts/open-sans-v17-all-charsets-700.woff2", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-700.woff2")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-800italic.woff", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-800italic.woff")
+        "fonts/open-sans-v17-all-charsets-700italic.woff", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-700italic.woff")
     ),
     (
-        "fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-800italic.woff2", 
-        include_bytes!("fonts/open-sans-v17-latin_vietnamese_latin-ext_greek-ext_greek_cyrillic-ext_cyrillic-800italic.woff2")
+        "fonts/open-sans-v17-all-charsets-700italic.woff2", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-700italic.woff2")
+    ),
+
+    (
+        "fonts/open-sans-v17-all-charsets-800.woff", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-800.woff")
+    ),
+    (
+        "fonts/open-sans-v17-all-charsets-800.woff2", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-800.woff2")
+    ),
+    (
+        "fonts/open-sans-v17-all-charsets-800italic.woff", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-800italic.woff")
+    ),
+    (
+        "fonts/open-sans-v17-all-charsets-800italic.woff2", 
+        include_bytes!("fonts/open-sans-v17-all-charsets-800italic.woff2")
     ),
 ];
 
 // An array of (file_name, file_contents) pairs
 pub static FONT_SOURCE_CODE_PRO: [(&str, &[u8]); 2] = [
     (
-        "fonts/source-code-pro-v11-latin_vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-500.woff",
-        include_bytes!("fonts/source-code-pro-v11-latin_vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-500.woff"),
+        "fonts/source-code-pro-v11-all-charsets-500.woff",
+        include_bytes!("fonts/source-code-pro-v11-all-charsets-500.woff"),
     ),
     (
-        "fonts/source-code-pro-v11-latin_vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-500.woff2",
-        include_bytes!("fonts/source-code-pro-v11-latin_vietnamese_latin-ext_greek_cyrillic-ext_cyrillic-500.woff2"),
+        "fonts/source-code-pro-v11-all-charsets-500.woff2",
+        include_bytes!("fonts/source-code-pro-v11-all-charsets-500.woff2"),
     ),
 ];
 
