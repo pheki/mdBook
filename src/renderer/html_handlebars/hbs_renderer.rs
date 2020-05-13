@@ -178,9 +178,11 @@ impl HtmlHandlebars {
         for (file_name, contents) in theme::FONT_OPEN_SANS.iter() {
             write_file(destination, file_name, contents)?;
         }
-        for (file_name, contents) in theme::FONT_SOURCE_CODE_PRO.iter() {
-            write_file(destination, file_name, contents)?;
-        }
+        write_file(
+            destination,
+            theme::FONT_SOURCE_CODE_PRO.0,
+            theme::FONT_SOURCE_CODE_PRO.1,
+        )?;
 
         let playpen_config = &html_config.playpen;
 
