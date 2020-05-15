@@ -96,10 +96,12 @@ pub struct Theme {
     pub index: Vec<u8>,
     pub header: Vec<u8>,
     pub chrome_css: Vec<u8>,
-    pub fonts_css: Vec<u8>,
     pub general_css: Vec<u8>,
     pub print_css: Vec<u8>,
     pub variables_css: Vec<u8>,
+    pub fonts_css: Vec<u8>,
+    /// Whether fonts.css was overriden by user theme.
+    pub fonts_overridden: bool,
     pub favicon: Vec<u8>,
     pub js: Vec<u8>,
     pub highlight_css: Vec<u8>,
@@ -128,7 +130,6 @@ impl Theme {
                 (theme_dir.join("header.hbs"), &mut theme.header),
                 (theme_dir.join("book.js"), &mut theme.js),
                 (theme_dir.join("css/chrome.css"), &mut theme.chrome_css),
-                (theme_dir.join("css/fonts.css"), &mut theme.fonts_css),
                 (theme_dir.join("css/general.css"), &mut theme.general_css),
                 (theme_dir.join("css/print.css"), &mut theme.print_css),
                 (
@@ -158,6 +159,17 @@ impl Theme {
                     warn!("Couldn't load custom file, {}: {}", filename.display(), e);
                 }
             }
+
+            // Try to copy fonts.css, setting flag if it was overriden
+            {
+                let filename = theme_dir.join("css/fonts.css");
+                if filename.exists() {
+                    match load_file_contents(&filename, &mut theme.fonts_css) {
+                        Ok(()) => theme.fonts_overridden = true,
+                        Err(e) => warn!("Couldn't load custom file, {}: {}", filename.display(), e),
+                    }
+                }
+            }
         }
 
         theme
@@ -170,10 +182,11 @@ impl Default for Theme {
             index: INDEX.to_owned(),
             header: HEADER.to_owned(),
             chrome_css: CHROME_CSS.to_owned(),
-            fonts_css: FONTS_CSS.to_owned(),
             general_css: GENERAL_CSS.to_owned(),
             print_css: PRINT_CSS.to_owned(),
             variables_css: VARIABLES_CSS.to_owned(),
+            fonts_css: FONTS_CSS.to_owned(),
+            fonts_overridden: false,
             favicon: FAVICON.to_owned(),
             js: JS.to_owned(),
             highlight_css: HIGHLIGHT_CSS.to_owned(),
@@ -253,6 +266,7 @@ mod tests {
             header: Vec::new(),
             chrome_css: Vec::new(),
             fonts_css: Vec::new(),
+            fonts_overridden: false,
             general_css: Vec::new(),
             print_css: Vec::new(),
             variables_css: Vec::new(),

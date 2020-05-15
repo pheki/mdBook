@@ -175,14 +175,18 @@ impl HtmlHandlebars {
             "FontAwesome/fonts/FontAwesome.ttf",
             theme::FONT_AWESOME_TTF,
         )?;
-        for (file_name, contents) in theme::FONT_OPEN_SANS.iter() {
-            write_file(destination, file_name, contents)?;
+
+        // Copy fonts only if fonts.css was not overriden
+        if !theme.fonts_overridden {
+            for (file_name, contents) in theme::FONT_OPEN_SANS.iter() {
+                write_file(destination, file_name, contents)?;
+            }
+            write_file(
+                destination,
+                theme::FONT_SOURCE_CODE_PRO.0,
+                theme::FONT_SOURCE_CODE_PRO.1,
+            )?;
         }
-        write_file(
-            destination,
-            theme::FONT_SOURCE_CODE_PRO.0,
-            theme::FONT_SOURCE_CODE_PRO.1,
-        )?;
 
         let playpen_config = &html_config.playpen;
 

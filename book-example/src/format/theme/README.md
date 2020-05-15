@@ -20,6 +20,8 @@ Here are the files you can override:
 - ***highlight.js*** is the JavaScript that is used to highlight code snippets,
   you should not need to modify this.  
 - ***highlight.css*** is the theme used for the code highlighting
+- ***css/fonts.css*** used to load the fonts used in the book. If this file is
+  overridden, the fonts won't be copied to the output directory.
 - ***favicon.png*** the favicon that will be used
 
 Generally, when you want to tweak the theme, you don't need to override all the
